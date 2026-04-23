@@ -3,7 +3,7 @@
 # Configures and registers self-hosted runners with GitHub organization
 
 - name: GitHub Actions Runner Setup
-  hosts: github_runners
+  hosts: mgmt:&{{ env_group }}
   gather_facts: yes
   become: no
 
